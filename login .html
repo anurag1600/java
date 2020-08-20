@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Login</h1>
+	<div>
+		Username:<br>
+		<input type="text" name="username" id="username">
+		<br>
+		<br>
+		Password:<br>
+		<input type="password" name="password" id="password">
+		<br><br>
+
+
+
+
+		<button onclick="login()">Submit</button>
+	</div>	
+<script type="text/javascript">
+
+	function login() 
+	{
+		var uname= document.getElementById('username').value;
+		var pass= document.getElementById('password').value;  
+
+
+
+		if(uname=="pn" && pass=="123")
+		{
+			location.assign("file:///C:/Users/Anurag%20Tiwari/Desktop/Audi/calculater.html")
+		}
+		else
+		{
+			window.alert("login failed")
+		}	
+
+	}
+</script>
+</body>
+</html>
